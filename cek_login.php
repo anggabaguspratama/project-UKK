@@ -13,7 +13,7 @@ session_start();
 $login = mysql_query("select * from users where username='$username' and password='$password'");
 if (mysql_num_rows($login) > 0){
 $_SESSION['username'] = $username;
-header("location:index.php");
+header("location:admin/index.php");
 }else{
 echo "<script>alert('Username atau Password salah')</script>";
 echo "<meta http-equiv='refresh' content='1 url=login.php'>";
