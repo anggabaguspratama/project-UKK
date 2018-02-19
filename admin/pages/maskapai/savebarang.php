@@ -7,6 +7,6 @@ $deskripsi  = $_POST['deskripsi'];
 $seat   = $_POST['seat'];
 
 mysql_query("INSERT INTO maskapai(id,nama,kode,deskripsi,seat)
-VALUE('$id','$nama','$kode','$deskripsi','seat')")or die(mysql_error());
+VALUE('$id','$nama','$kode','$deskripsi','$seat')")or die(mysql_error());
 header('location:index.php');
 ?>

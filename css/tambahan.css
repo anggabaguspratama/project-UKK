@@ -15,3 +15,20 @@
     padding: 10px 20px;
     margin-top: 50px;
 }
+.daftar{
+	width: 300px;
+	height: 250px;
+	background: rgba(0,0,0,0.5);
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+.button-login{
+	font-size: 14px;
+    color: #fff;
+    background: #ffc107;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+}

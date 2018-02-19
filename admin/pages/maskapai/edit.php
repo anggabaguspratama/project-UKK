@@ -357,7 +357,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         </a>
         <ul class="treeview-menu">
           <li><a href="../../index.php"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-          <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+          <li><a href="../../index2.php"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
         </ul>
       </li>
       <li class="active"><a href="index.php"><i class="fa fa-map"></i> <span>Rute</span></a></li>
@@ -574,7 +574,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
         <div class="box box-info">
           <div class="box-header">
-            <h3 class="box-title">Tambah rute</h3>
+            <h3 class="box-title">Edit rute</h3>
           </div>
           <div class="box-body">
 

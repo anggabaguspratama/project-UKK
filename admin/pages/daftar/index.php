@@ -384,27 +384,27 @@ include 'koneksi.php';
                 <thead>
                 <tr>
                   <th>No</th>
-                  <th>Waktu Keberangkatan</th>
-                  <th>Keberangkatan</th>
-                  <th>Tujuan</th>
-                  <th>Harga</th>
+                  <th>Id_User</th>
+                  <th>Email</th>
+                  <th>Username</th>
+                  <th>Password</th>
                   <th>Action</th>
                   <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                   <?php
-                  $query=mysql_query("SELECT * FROM rute");
+                  $query=mysql_query("SELECT * FROM users");
                   $no=1;
                   while($var=mysql_fetch_array($query)){
                     echo"<tr>
                     <td>$no</td> 
-                    <td>$var[jam]</td>
-                    <td>$var[dari]</td>
-                    <td>$var[tujuan]</td>
-                    <td>$var[harga]</td>
-                    <td><a href='delete.php?id=$var[id]'>Delete</td>
-                    <td><a href='edit.php?id=$var[id]'>Edit</td>
+                    <td>$var[id_user]</td>
+                    <td>$var[nama]</td>
+                    <td>$var[username]</td>
+                    <td>$var[password]</td>
+                    <td><a href='delete.php?id_user=$var[id_user]'>Delete</td>
+                    <td><a href='edit.php?id_user=$var[id_user]'>Edit</td>
                     </tr>";
                     $no++;
                   }
@@ -413,10 +413,10 @@ include 'koneksi.php';
                 <tfoot>
                 <tr>
                   <th>No</th>
-                  <th>Waktu Keberangkatan</th>
-                  <th>Keberangkatan</th>
-                  <th>Tujuan</th>
-                  <th>Harga</th>
+                  <th>Id_User</th>
+                  <th>Email</th>
+                  <th>Username</th>
+                  <th>Password</th>
                   <th>Action</th>
                   <th>Action</th>
                 </tr>

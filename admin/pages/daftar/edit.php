@@ -1,7 +1,7 @@
 <?php 
 include "koneksi.php";
-$id=$_GET['id'];
-$query=mysql_query("select * from user where id='$id'");
+$id_user=$_GET['id_user'];
+$query=mysql_query("select * from users where id_user='$id_user'");
 ?>
 <?php
 while($row=mysql_fetch_array($query)){
@@ -574,42 +574,25 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
         <div class="box box-info">
           <div class="box-header">
-            <h3 class="box-title">Tambah rute</h3>
+            <h3 class="box-title">Tambah User</h3>
           </div>
           <div class="box-body">
-
-
-            <!-- /.form group -->
-
-            <!-- time Picker -->
             <form action="editbarang.php" method="POST">
-              <div class="bootstrap-timepicker">
-                <div class="form-group">
-                  <label>Waktu:</label>
-
-                  <div class="input-group">
-                    <input type="hidden" name="id" value="<?php echo $row['id'];?>">
-                    <input type="text" class="form-control timepicker" name="jam" value="<?php echo $row['jam'];?>">
-
-                    <div class="input-group-addon">
-                      <i class="fa fa-clock-o"></i>
-                    </div>
-                  </div>
-                  <!-- /.input group -->
-                </div>
-                <!-- /.form group -->
+              <div class="form-group">
+                <label>Id User:</label>
+                <input type="hidden" class="form-control" name="id_user" value="<?php echo $row['id_user'];?>">
+              </div>
+             <div class="form-group">
+                <label>Email:</label>
+                <input type="text" class="form-control" name="nama" value="<?php echo $row['nama'];?>">
               </div>
               <div class="form-group">
-                <label>keberangkatan:</label>
-                <input type="text" class="form-control" name="dari" value="<?php echo $row['dari'];?>">
+                <label>Username:</label>
+                <input type="text" class="form-control" name="username" value="<?php echo $row['username'];?>">
               </div>
               <div class="form-group">
-                <label>tujuan:</label>
-                <input type="text" class="form-control" name="tujuan" value="<?php echo $row['tujuan'];?>">
-              </div>
-              <div class="form-group">
-                <label>harga:</label>
-                <input type="text" class="form-control" name="harga" value="<?php echo $row['harga'];?>">
+                <label>Password:</label>
+                <input type="text" class="form-control" name="password" value="<?php echo $row['password'];?>">
               </div>
               <button class="btn btn-primary" type="submit">update</button>
             </form>
@@ -617,7 +600,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
 
 
-          </div>
+          </div> 
           <!-- /.box-body -->
         </div>
       </div>
