@@ -541,89 +541,30 @@ include 'koneksi.php';
             <h3 class="box-title">Tambah rute</h3>
           </div>
           <div class="box-body">
-
-
-            <!-- /.form group -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- time Picker -->
             <form action="savebarang.php" method="POST">
-              <div class="bootstrap-timepicker">
-                <div class="form-group">
-                  <label>Waktu:</label>
-
-                  <div class="input-group">
-                    <input type="text" class="form-control timepicker" name="jam">
-
-                    <div class="input-group-addon">
-                      <i class="fa fa-clock-o"></i>
-                    </div>
-                  </div>
-                  <!-- /.input group -->
-                </div>
-                <!-- /.form group -->
-              </div>
-              <div class="bootstrap-timepicker">
-                <div class="form-group">
-                  <label>Waktu:</label>
-
-                  <div class="input-group">
-                    <input type="text" class="form-control timepicker" name="jamdat">
-
-                    <div class="input-group-addon">
-                      <i class="fa fa-clock-o"></i>
-                    </div>
-                  </div>
-                  <!-- /.input group -->
-                </div>
-                <!-- /.form group -->
+              <div class="form-group">
+                <label>Nama Maskapai:</label>
+                <input type="text" class="form-control" name="nama" >
               </div>
               <div class="form-group">
-                <label>keberangkatan:</label>
-                <input type="text" class="form-control" name="dari" placeholder="kota keberangkatan">
+                <label>Kode Maskapai:</label>
+                <input type="text" class="form-control" name="kode" >
               </div>
               <div class="form-group">
-                <label>tujuan:</label>
-                <input type="text" class="form-control" name="tujuan" placeholder="kota tujuan">
+                <label>Deskripsi :</label>
+                <input type="text" class="form-control" name="deskripsi" >
               </div>
               <div class="form-group">
-                <label>harga:</label>
-                <input type="text" class="form-control" name="harga" placeholder="harga">
+                <label>Seat :</label>
+                <input type="text" class="form-control" name="seat" >
               </div>
               <div class="form-group">
-                <label>Pesawat</label>
-                <select class="form-control select2" style="width: 100%;" name="idtransport" class="caritujuan auto1">
-                  <?php
-                  $query = "SELECT  * FROM maskapai";
-                  $hasil = mysql_query($query);
-                  while ($data = mysql_fetch_array($hasil))
-                  {
-                    echo "<option value='".$data['id']."'>".$data['nama']."</option>";
-                  }
-                  ?>
-                </select>
+                <label>ID_type :</label>
+                <input type="text" class="form-control" name="id_type" >
+              </div>
+              <div class="form-group">
+                <label>Logo :</label>
+                <input type="text" class="form-control" name="logo" >
               </div>
               <button class="btn btn-primary" type="submit">submit</button>
             </form>

@@ -415,7 +415,7 @@ if (!isset($_SESSION['username'])){
             </div>
           </a>
           <!-- ./col -->
-          <a href="pages/daftar/daftar.php">
+          <a href="pages/daftar/index.php">
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-yellow">

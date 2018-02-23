@@ -385,6 +385,7 @@ include 'koneksi.php';
                 <tr>
                   <th>No</th>
                   <th>Waktu Keberangkatan</th>
+                  <th>Waktu Kedatangan</th>
                   <th>Keberangkatan</th>
                   <th>Tujuan</th>
                   <th>Harga</th>
@@ -400,6 +401,7 @@ include 'koneksi.php';
                     echo"<tr>
                     <td>$no</td> 
                     <td>$var[jam]</td>
+                    <td>$var[jamdat]</td>
                     <td>$var[dari]</td>
                     <td>$var[tujuan]</td>
                     <td>$var[harga]</td>
@@ -414,6 +416,7 @@ include 'koneksi.php';
                 <tr>
                   <th>No</th>
                   <th>Waktu Keberangkatan</th>
+                  <th>Waktu Kedatangan</th>
                   <th>Keberangkatan</th>
                   <th>Tujuan</th>
                   <th>Harga</th>

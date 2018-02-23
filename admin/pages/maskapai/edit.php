@@ -604,6 +604,10 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                 <label>seat:</label>
                 <input type="text" class="form-control" name="seat" value="<?php echo $row['seat'];?>">
               </div>
+              <div class="form-group">
+                <label>Logo:</label>
+                <input type="text" class="form-control" name="logo" value="<?php echo $row['logo'];?>">
+              </div>
               <button class="btn btn-primary" type="submit">update</button>
             </form>
             <?php } ?>  

@@ -1,7 +1,7 @@
 <?php 
 include "koneksi.php";
 $id=$_GET['id'];
-$query=mysql_query("select * from user where id='$id'");
+$query=mysql_query("select * from rute where id='$id'");
 ?>
 <?php
 while($row=mysql_fetch_array($query)){
@@ -585,11 +585,27 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
             <form action="editbarang.php" method="POST">
               <div class="bootstrap-timepicker">
                 <div class="form-group">
-                  <label>Waktu:</label>
+                  <label>Waktu Berangkat:</label>
 
                   <div class="input-group">
                     <input type="hidden" name="id" value="<?php echo $row['id'];?>">
                     <input type="text" class="form-control timepicker" name="jam" value="<?php echo $row['jam'];?>">
+
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                  </div>
+                  <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+              </div>
+              <div class="bootstrap-timepicker">
+                <div class="form-group">
+                  <label>Waktu Datang:</label>
+
+                  <div class="input-group">
+                    <input type="hidden" name="id" value="<?php echo $row['id'];?>">
+                    <input type="text" class="form-control timepicker" name="jamdat" value="<?php echo $row['jamdat'];?>">
 
                     <div class="input-group-addon">
                       <i class="fa fa-clock-o"></i>

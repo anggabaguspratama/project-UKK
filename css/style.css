@@ -29,7 +29,7 @@
 	img{max-width:100%;}
 /*-- //Reset-Code --*/
 body {
-	background:url('../images/1.jpg') no-repeat 0px 0px;
+	background:url('../images/2.jpg') no-repeat 0px 0px;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 	background-attachment: fixed;
@@ -415,7 +415,7 @@ form.blackbg{
 }
  @media (max-width:736px){
 	.main-agileinfo {
-		width: 88%;
+		width: 90%;
 		margin:40px auto;
 	}
 	h1 {
